@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Kappasino</h1>
+    <div class="slot-machine">
+        {% for row in reels %}
+            <div class="reel">
+                <div class="reel-inner">
+                    {% for symbol in row %}
+                        <div class="symbol">{{ symbol }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <button id="spin-btn" class="button">Jogar</button>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

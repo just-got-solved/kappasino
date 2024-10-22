@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.reel {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 0 5px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #218838;
+}
